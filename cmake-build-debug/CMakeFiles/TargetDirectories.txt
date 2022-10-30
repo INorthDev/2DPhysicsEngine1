@@ -1,0 +1,3 @@
+/home/ahmet/CLionProjects/2DPhysicsEngine1/cmake-build-debug/CMakeFiles/2DPhysicsEngine1.dir
+/home/ahmet/CLionProjects/2DPhysicsEngine1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ahmet/CLionProjects/2DPhysicsEngine1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
