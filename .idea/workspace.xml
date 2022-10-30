@@ -20,7 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="A 2D Physics Engine" />
+    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="A 2D Physics Engine">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +48,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="MIXED" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -138,7 +141,7 @@
       <workItem from="1667058745956" duration="2090000" />
       <workItem from="1667118036070" duration="9456000" />
       <workItem from="1667135714666" duration="10990000" />
-      <workItem from="1667157936711" duration="3000" />
+      <workItem from="1667157936711" duration="763000" />
     </task>
     <task id="LOCAL-00001" summary="A 2D Physics Engine">
       <created>1667139141761</created>
@@ -182,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667140590799</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="A 2D Physics Engine">
+      <created>1667157995471</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667157995471</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
