@@ -20,8 +20,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="A 2D Physics Engine">
+    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="Update:&#10;-New SFML Window within an arrow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/2DPhysicsEngine1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2DPhysicsEngine1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2DPhysicsEngine1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2DPhysicsEngine1.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/vector2d.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vector2d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,12 +94,12 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.2DPhysicsEngine1">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="2DPhysicsEngine1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="2DPhysicsEngine1" TARGET_NAME="2DPhysicsEngine1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="2DPhysicsEngine1" RUN_TARGET_NAME="2DPhysicsEngine1">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="2DPhysicsEngine1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="2DPhysicsEngine1" TARGET_NAME="2DPhysicsEngine1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="2DPhysicsEngine1" RUN_TARGET_NAME="2DPhysicsEngine1">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -142,6 +149,7 @@
       <workItem from="1667118036070" duration="9456000" />
       <workItem from="1667135714666" duration="10990000" />
       <workItem from="1667157936711" duration="763000" />
+      <workItem from="1667681278291" duration="4024000" />
     </task>
     <task id="LOCAL-00001" summary="A 2D Physics Engine">
       <created>1667139141761</created>
@@ -192,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667157995471</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update:&#10;-New SFML Window within an arrow">
+      <created>1667675997582</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667675997582</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +285,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A 2D Physics Engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="A 2D Physics Engine" />
+    <MESSAGE value="Update:&#10;-New SFML Window within an arrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update:&#10;-New SFML Window within an arrow" />
   </component>
 </project>
