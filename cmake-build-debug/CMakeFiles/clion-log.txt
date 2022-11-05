@@ -1,6 +1,8 @@
 /snap/clion/209/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/209/bin/ninja/linux/ninja -G Ninja -S /home/ahmet/CLionProjects/2DPhysicsEngine1 -B /home/ahmet/CLionProjects/2DPhysicsEngine1/cmake-build-debug
 -- Found SFML 2.5.1 in /usr/lib/x86_64-linux-gnu/cmake/SFML
-FOUND:
+-- SFML_INCLUDE_DIR: /home/ahmet/Libraries/SFML-2.5.1/include
+-- SFML_LIBRARIES: 
+-- SFML_VERSION: 2.5.1
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/ahmet/CLionProjects/2DPhysicsEngine1/cmake-build-debug

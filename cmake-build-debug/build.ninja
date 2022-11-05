@@ -49,9 +49,10 @@ cmake_ninja_workdir = /home/ahmet/CLionProjects/2DPhysicsEngine1/cmake-build-deb
 
 build cmake_object_order_depends_target_2DPhysicsEngine1: phony || CMakeFiles/2DPhysicsEngine1.dir
 
-build CMakeFiles/2DPhysicsEngine1.dir/sfml-app.cpp.o: CXX_COMPILER__2DPhysicsEngine1_Debug /home/ahmet/CLionProjects/2DPhysicsEngine1/sfml-app.cpp || cmake_object_order_depends_target_2DPhysicsEngine1
-  DEP_FILE = CMakeFiles/2DPhysicsEngine1.dir/sfml-app.cpp.o.d
+build CMakeFiles/2DPhysicsEngine1.dir/main.cpp.o: CXX_COMPILER__2DPhysicsEngine1_Debug /home/ahmet/CLionProjects/2DPhysicsEngine1/main.cpp || cmake_object_order_depends_target_2DPhysicsEngine1
+  DEP_FILE = CMakeFiles/2DPhysicsEngine1.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++23
+  INCLUDES = -I/home/ahmet/CLionProjects/2DPhysicsEngine1/SFML_INCLUDE_DIR
   OBJECT_DIR = CMakeFiles/2DPhysicsEngine1.dir
   OBJECT_FILE_DIR = CMakeFiles/2DPhysicsEngine1.dir
 
@@ -63,8 +64,10 @@ build CMakeFiles/2DPhysicsEngine1.dir/sfml-app.cpp.o: CXX_COMPILER__2DPhysicsEng
 #############################################
 # Link the executable 2DPhysicsEngine1
 
-build 2DPhysicsEngine1: CXX_EXECUTABLE_LINKER__2DPhysicsEngine1_Debug CMakeFiles/2DPhysicsEngine1.dir/sfml-app.cpp.o
+build 2DPhysicsEngine1: CXX_EXECUTABLE_LINKER__2DPhysicsEngine1_Debug CMakeFiles/2DPhysicsEngine1.dir/main.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/ahmet/CLionProjects/2DPhysicsEngine1/SFML_LIBRARY_DIR  /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+  LINK_PATH = -L/home/ahmet/CLionProjects/2DPhysicsEngine1/SFML_LIBRARY_DIR
   OBJECT_DIR = CMakeFiles/2DPhysicsEngine1.dir
   POST_BUILD = :
   PRE_LINK = :
