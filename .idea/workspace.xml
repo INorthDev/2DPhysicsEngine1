@@ -20,7 +20,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="Update:&#10;-Vector subtraction fixed" />
+    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="Update:&#10;-Vector subtraction fixed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,11 +92,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="all" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/Makefile" target="all" workingDirectory="" arguments="">
         <envs />
@@ -140,7 +137,8 @@
       <workItem from="1667118036070" duration="9456000" />
       <workItem from="1667135714666" duration="10990000" />
       <workItem from="1667157936711" duration="763000" />
-      <workItem from="1667681278291" duration="4327000" />
+      <workItem from="1667681278291" duration="4423000" />
+      <workItem from="1667722567002" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="A 2D Physics Engine">
       <created>1667139141761</created>
@@ -212,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667685595515</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update:&#10;-Vector subtraction fixed">
+      <created>1667685652598</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667685652598</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

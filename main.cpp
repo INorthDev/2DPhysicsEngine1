@@ -34,6 +34,8 @@ int main() {
     Sprite mousePointer = Sprite(texture);
     mousePointer.setPosition(250.0, 250.0);
     Vec arrow = Vec(mousePointer.getPosition());
+    mousePointer.setOrigin(0.0, 13.0);
+
     ////Window Loop////
     while(window.isOpen()) {
 
