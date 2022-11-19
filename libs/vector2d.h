@@ -66,6 +66,9 @@ public:
 
     T* getCartesian() { return cartesian; }
 
+    T xAxis() { return cartesian[0]; }
+    T yAxis() { return cartesian[1]; }
+
     void update(sf::Vector2<T> vector2) {
         auto _x = (T) vector2.x, _y = (T) vector2.y;
         magnitude = sqrt(_x*_x+_y*_y), angle = (T)atan2((double)_y, (double)_x);
@@ -94,13 +97,13 @@ public:
     }
 
     void setMagnitude(T _m) {
-        cartesian[0] = cartesian[0] * _m / magnitude, cartesian[1] = cartesian[1] * _m / magnitude;
         magnitude = _m;
+        updateCartesian();
     }
 
     void changeMagnitude(T _m) {
-        cartesian[0] = cartesian[0]*(_m / magnitude + 1), cartesian[1] = cartesian[1]*(_m / magnitude + 1);
         magnitude += _m;
+        updateCartesian();
     }
 
     static T crossProduct(const Vector2D& v1, const Vector2D& v2) {
@@ -154,5 +157,7 @@ public:
     }
 
 };
+
+static Vector2D<float> ZeroVector = Vector2D<float>(0.0, 0.0);
 
 #endif //INC_2DPHYSICSENGINE1_VECTOR2D_H

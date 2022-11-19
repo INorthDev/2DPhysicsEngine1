@@ -8,8 +8,7 @@
 
 class Force : Vector2D<float> {
 public:
-    float x;
-    float y;
+
 };
 
 #endif //INC_2DPHYSICSENGINE1_FORCE_H

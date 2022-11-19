@@ -1,0 +1,8 @@
+//
+// Created by ahmet on 04.12.2022.
+//
+
+#ifndef INC_2DPHYSICSENGINE1_PHYSICTIME_H
+#define INC_2DPHYSICSENGINE1_PHYSICTIME_H
+static float t = 0;
+#endif //INC_2DPHYSICSENGINE1_PHYSICTIME_H

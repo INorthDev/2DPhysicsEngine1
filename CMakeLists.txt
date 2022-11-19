@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(2DPhysicsEngine1 main.cpp libs/vector2d.h)
+add_executable(2DPhysicsEngine1 main.cpp libs/vector2d.h libs/entity.h libs/physictime.h)
 target_link_libraries (2DPhysicsEngine1 sfml-graphics sfml-window sfml-system)

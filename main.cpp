@@ -6,18 +6,15 @@
 #include <exception>
 #include <cmath>
 #include "libs/calc.h"
+#include "libs/entity.h"
+#include "libs/physictime.h"
 
+using namespace std;
 using namespace sf;
 
 typedef Vector2D<float> Vec;
 
-double a(double i) {
-    return i*i-i-1.0;
-}
-
 int main() {
-
-
     ////Window Setup////
     RenderWindow window;
     window.create(VideoMode(960, 640), "Physics Engine");
@@ -26,24 +23,24 @@ int main() {
 
     ////Mouse Vector Setup////
     Vec mouse = Vec(Mouse::getPosition());
-    Vec mouseNotional = mouse;
     ////Mouse Vector Setup End////
 
-    ////Texture Setup////
-    Texture texture;
-    if(!texture.loadFromFile("/home/ahmet/CLionProjects/2DPhysicsEngine1/assets/arrow.png")) {
-        cout << "can't load texture" << endl;
-    }
-    ////Texture Setup End////
+    ///Texture Setup///
 
-    Sprite mousePointer = Sprite(texture);
-    mousePointer.setPosition(250.0, 250.0);
-    Vec arrow = Vec(mousePointer.getPosition());
-    mousePointer.setOrigin(0.0, 13.0);
+    Texture ball_t;
+    if(!ball_t.loadFromFile("/home/ahmet/CLionProjects/2DPhysicsEngine1/assets/ball.png")) { cout << "can't load ball texture"; }
+
+    ///Texture Setup End///
+
+    ///Sprite Setup///
+
+    Entity Ball = Entity(Vec(0, 0), 5.0, ball_t, 0.0, [](float i){ return 0.01; });
+
+    ///Sprite Setup End////
 
     ////Window Loop////
     while(window.isOpen()) {
-
+        t++;
         ////Event Check////
         Event event{};
         while(window.pollEvent(event)) {
@@ -52,27 +49,12 @@ int main() {
             }
         }
         ////Event Check End////
-
         mouse.update(Mouse::getPosition());
-
-        arrow.update(mousePointer.getPosition());
-
-        mouseNotional = mouse-arrow;
-
-        mousePointer.setRotation(mouseNotional.getAngle());
-        mousePointer.setScale(mouseNotional.getMagnitude()/160, 1.0);
-
-
+        Ball.update();
+        cout << Ball.getLocation();
         window.clear(Color::Black);
-
-        window.draw(mousePointer);
-
-        auto re = integrate<double>(0.0, 5.0, &a);
-
-        cout << re << endl;
-
+        window.draw(Ball.getSprite());
         window.display();
-
     }
     ////Window Loop End////
 
