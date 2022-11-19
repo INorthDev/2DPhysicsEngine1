@@ -4,10 +4,10 @@
 
 #ifndef INC_2DPHYSICSENGINE1_VECTOR2D_H
 #define INC_2DPHYSICSENGINE1_VECTOR2D_H
-#define PI M_PI
 #include <cmath>
 #include <string>
 #include <iostream>
+#define PI M_PI
 
 
 using namespace std;

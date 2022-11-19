@@ -5,10 +5,15 @@
 #include <iostream>
 #include <exception>
 #include <cmath>
+#include "libs/calc.h"
 
 using namespace sf;
 
 typedef Vector2D<float> Vec;
+
+double a(double i) {
+    return i*i-i-1.0;
+}
 
 int main() {
 
@@ -61,6 +66,10 @@ int main() {
         window.clear(Color::Black);
 
         window.draw(mousePointer);
+
+        auto re = integrate<double>(0.0, 5.0, &a);
+
+        cout << re << endl;
 
         window.display();
 
