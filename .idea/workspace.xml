@@ -20,39 +20,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="Update:&#10;-integration added">
-      <change afterPath="$PROJECT_DIR$/libs/physictime.h" afterDir="false" />
+    <list default="true" id="43521c36-0d14-40d7-aaad-97d1b3b8769f" name="Changes" comment="Update:&#10;-1 Dimensional Motion with non-constant acceleration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-a0f40217032409064eb1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-6690112097c0aa0634c7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-b3d02bd9ec714fc59fb5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-11-05T19-19-32-0323.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-2DPhysicsEngine1-Debug-01d1fc7157463c5fd47c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-12-04T16-43-50-0394.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/2DPhysicsEngine1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/2DPhysicsEngine1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2DPhysicsEngine1.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2DPhysicsEngine1.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/2DPhysicsEngine1.dir/sfml-app.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/calc.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/calc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/force.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/force.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/vector2d.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/vector2d.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/entity.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/entity.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/physictime.h" beforeDir="false" afterPath="$PROJECT_DIR$/libs/physictime.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +49,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="2DPhysics_Engine1" />
@@ -126,11 +104,6 @@
   </component>
   <component name="RunManager" selected="CMake Application.2DPhysicsEngine1">
     <configuration name="2DPhysicsEngine1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="2DPhysicsEngine1" TARGET_NAME="2DPhysicsEngine1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="2DPhysicsEngine1" RUN_TARGET_NAME="2DPhysicsEngine1">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -193,7 +166,8 @@
       <workItem from="1670104424747" duration="12000" />
       <workItem from="1670142024268" duration="2379000" />
       <workItem from="1670164127035" duration="24000" />
-      <workItem from="1670168915454" duration="7235000" />
+      <workItem from="1670168915454" duration="7842000" />
+      <workItem from="1670177409514" duration="1070000" />
     </task>
     <task id="LOCAL-00001" summary="A 2D Physics Engine">
       <created>1667139141761</created>
@@ -293,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668849697897</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update:&#10;-1 Dimensional Motion with non-constant acceleration">
+      <created>1670176326990</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1670176326990</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +356,7 @@
     <MESSAGE value="Update:&#10;-Vector subtraction fixed" />
     <MESSAGE value="Update:&#10;-Sprite's origin changed" />
     <MESSAGE value="Update:&#10;-integration added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update:&#10;-integration added" />
+    <MESSAGE value="Update:&#10;-1 Dimensional Motion with non-constant acceleration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update:&#10;-1 Dimensional Motion with non-constant acceleration" />
   </component>
 </project>

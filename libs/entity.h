@@ -44,9 +44,10 @@ public:
     void update() {
         acceleration.setMagnitude(accelerationFunc(t));
         function<float(float)> velocityFunc;
-        velocityFunc = [this](float _t) { return integrate<float>(accelerationFunc, 0.0, t); };
-        velocity.setMagnitude(velocityFunc(t));
-        location = location+velocity;
+        //velocityFunc = [this](float _t) { return integrate<float>(accelerationFunc, 0.0, t); };
+        //velocity.setMagnitude(velocityFunc(t));
+        velocity = velocity + change*acceleration;
+        location = location+change*velocity;
         sprite.setPosition(location.xAxis(), location.yAxis());
         sprite.setScale(0.1, 0.1);
     }

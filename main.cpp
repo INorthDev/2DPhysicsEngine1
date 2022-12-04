@@ -18,7 +18,7 @@ int main() {
     ////Window Setup////
     RenderWindow window;
     window.create(VideoMode(960, 640), "Physics Engine");
-    window.setFramerateLimit(60);
+    window.setFramerateLimit(FPS_LIM);
     ////Window Setup End////
 
     ////Mouse Vector Setup////
@@ -34,7 +34,7 @@ int main() {
 
     ///Sprite Setup///
 
-    Entity Ball = Entity(Vec(0, 0), 5.0, ball_t, 0.0, [](float i){ return 0.01; });
+    Entity Ball = Entity(Vec(0, 0), 5.0, ball_t, 0.0, [](float i){ return -0.5*t+100; });
 
     ///Sprite Setup End////
 
@@ -51,7 +51,6 @@ int main() {
         ////Event Check End////
         mouse.update(Mouse::getPosition());
         Ball.update();
-        cout << Ball.getLocation();
         window.clear(Color::Black);
         window.draw(Ball.getSprite());
         window.display();
