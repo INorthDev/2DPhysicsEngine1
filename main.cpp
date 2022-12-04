@@ -34,13 +34,13 @@ int main() {
 
     ///Sprite Setup///
 
-    Entity Ball = Entity(Vec(0, 0), 5.0, ball_t, 0.0, [](float i){ return t*100; });
+    Entity Ball = Entity(Vec(0, 0), 5.0, ball_t, 0.0, [](float i){ return t*150; });
 
     ///Sprite Setup End////
 
     ////Window Loop////
     while(window.isOpen()) {
-        t++;
+        t += delta_time;
         ////Event Check////
         Event event{};
         while(window.pollEvent(event)) {
