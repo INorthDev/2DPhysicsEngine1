@@ -21,6 +21,8 @@ class Vector2D {
 
     string direction;
 
+    void updateAngle() { angle = (T) atan2f((float)cartesian[1], (float)cartesian[0]); }
+
     void updateCartesian() { cartesian[0] = magnitude*cos(angle), cartesian[1] = magnitude*sin(angle); }
 
     void updateDirection() { //this function updates direction value with 4 digit precision
@@ -104,6 +106,18 @@ public:
     void changeMagnitude(T _m) {
         magnitude += _m;
         updateCartesian();
+    }
+
+    void setXComponent(T _m) {
+        cartesian[0] = _m;
+        magnitude = (T)sqrtf((float)(_m*_m+cartesian[1]*cartesian[1]));
+        updateAngle(), updateDirection();
+    }
+
+    void setYComponent(T _m) {
+        cartesian[1] = _m;
+        magnitude = (T)sqrtf((float)(_m*_m+cartesian[0]*cartesian[0]));
+        updateAngle(), updateDirection();
     }
 
     static T crossProduct(const Vector2D& v1, const Vector2D& v2) {

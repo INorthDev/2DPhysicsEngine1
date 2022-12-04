@@ -34,7 +34,7 @@ int main() {
 
     ///Sprite Setup///
 
-    Entity Ball = Entity(Vec(0, 0), 5.0, ball_t, 0.0, [](float i){ return -0.5*t+100; });
+    Entity Ball = Entity(Vec(0, 0), 5.0, ball_t, 0.0, [](float i){ return t*100; });
 
     ///Sprite Setup End////
 

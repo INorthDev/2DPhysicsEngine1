@@ -23,15 +23,15 @@ class Entity {
     Vec location;
     Vec acceleration;
     Vec velocity;
-    function<float(float)> accelerationFunc;
+    function<float(float)> accelerationXFunc;
     float mass{};
     Sprite sprite;
     Texture texture;
 public:
-    Entity(Vec _location, float _mass, const Texture& _texture, float angle): location(std::move(_location)), acceleration(0.0, angle), velocity(0.0, angle), texture(_texture), sprite(_texture), accelerationFunc(std::move([](float){ return 0; })) {
+    Entity(Vec _location, float _mass, const Texture& _texture, float angle): location(std::move(_location)), acceleration(0.0, angle), velocity(0.0, angle), texture(_texture), sprite(_texture), accelerationXFunc(std::move([](float){ return 0; })) {
         sprite.setPosition(location.xAxis(), location.yAxis());
     }
-    Entity(Vec _location, float _mass, const Texture& _texture, float angle, const function<float(float)>& func): location(std::move(_location)), acceleration(0.0, angle), velocity(0.0, angle), texture(_texture), sprite(_texture), accelerationFunc(func) {
+    Entity(Vec _location, float _mass, const Texture& _texture, float angle, const function<float(float)>& func): location(std::move(_location)), acceleration(0.0, angle), velocity(0.0, angle), texture(_texture), sprite(_texture), accelerationXFunc(func) {
         sprite.setPosition(location.xAxis(), location.yAxis());
     }
     Vec getLocation() { return location; }
@@ -42,12 +42,10 @@ public:
     Texture getTexture() { return texture; }
 
     void update() {
-        acceleration.setMagnitude(accelerationFunc(t));
-        function<float(float)> velocityFunc;
-        //velocityFunc = [this](float _t) { return integrate<float>(accelerationFunc, 0.0, t); };
-        //velocity.setMagnitude(velocityFunc(t));
+        acceleration.setXComponent(accelerationXFunc(t));
+        acceleration.setYComponent(0.5*10*t*t);
         velocity = velocity + change*acceleration;
-        location = location+change*velocity;
+        location = location + change*velocity;
         sprite.setPosition(location.xAxis(), location.yAxis());
         sprite.setScale(0.1, 0.1);
     }
