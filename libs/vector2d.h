@@ -146,7 +146,11 @@ public:
     }
 
     friend Vector2D operator / (T _c, const Vector2D& v) {
-        return {v.magnitude/abs(_c), fmod(v.angle + PI*(T)(_c<0.0), 2*PI)};
+        return {(T)abs((float)_c)/v.magnitude, (T)fmod<T>(v.angle + (T)PI*(T)(_c<0.0), 2*PI)};
+    }
+
+    friend Vector2D operator / (const Vector2D& v, T _c) {
+        return {v.magnitude/(T)abs((float)_c), (T)fmod<T>(v.angle + (T)PI*(T)(_c<0.0), 2*PI)};
     }
 
     friend T operator * (const Vector2D& v1, const Vector2D& v2) {
@@ -154,6 +158,10 @@ public:
     }
 
     friend Vector2D operator * (T _c, const Vector2D& v) {
+        return {abs(_c)*v.magnitude, (T)(180.0/PI*(T)(fmod((T)v.angle + PI*(T)(_c<0.0), 2*PI)))};
+    }
+
+    friend Vector2D operator * (const Vector2D& v, T _c) {
         return {abs(_c)*v.magnitude, (T)(180.0/PI*(T)(fmod((T)v.angle + PI*(T)(_c<0.0), 2*PI)))};
     }
 
